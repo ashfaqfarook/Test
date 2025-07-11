@@ -21,8 +21,8 @@ A  **SharePoint Online** is used to store, organize, share, and access informati
 
 # Types of SharePoint Site 
 Two types of SharePoint site can be created:
-- Team
-- Communication
+- Team(#team-site)
+- Communication(#communication-site)
 
 # Signing to SharePoint Online
 ## Pre-requisites
@@ -39,8 +39,8 @@ A **Team site** is used when you want to collaborate with other members of a tea
 
 ## Creating a Team Site
 ### Pre-requisites
-• If you’re a new user, create an account in **Office 365** to access the SharePoint online. 
-• If you’re an existing user of the **Office 365**, sign in to the **SharePoint Online** account. 
+- If you’re a new user, create an account in **Office 365** to access the SharePoint online.
+- If you’re an existing user of the **Office 365**, sign in to the **SharePoint Online** account. 
 
 **Context:**
 You can create a **Team site** for your team to maintain the documents and information within the team;  add owners and the respective team members on the site. You can add documents, information on the  site so that the team can collaborate the facts among themselves for better understanding and  utilization of the resources.
