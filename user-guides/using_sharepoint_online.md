@@ -12,7 +12,7 @@ This guide provides best practices for creating comprehensive API documentation 
 - [Team Site](#team-site)
 - [Communication-site](#communication-site)
 - [Creating a Page in SharePoint Online](#creating-a-page-in-sharepoint-online)
-- [Creating a Document Library Application in SharePoint Online](#creating-a-document-library-application-in-sharepoint-online)
+- [Creating a Document Library Application in the SharePoint Online](#creating-a-document-library-application-in-the-sharepoint-online)
 
 # SharePoint Online
 **SharePoint Online** refers to website created and used by the organizations accessible by any device. 
@@ -21,8 +21,8 @@ A  **SharePoint Online** is used to store, organize, share, and access informati
 
 # Types of SharePoint Site 
 Two types of SharePoint site can be created:
-- Team(#team-site)
-- Communication(#communication-site)
+- [Team](#team-site)
+- [Communication](#communication-site)
 
 # Signing to SharePoint Online
 ## Pre-requisites
@@ -52,9 +52,9 @@ You can create a **Team site** for your team to maintain the documents and infor
 5. On the **Site name** field, enter your team name. The **Group email address** and **Site Address** appears automatically. The availability of the site appears as green color.
 6. On the **Site description** field, enter the site description.
 7. On the **Privacy settings**, select one of the following: 
-• **Public – anyone in the organization can access this site** 
+- **Public – anyone in the organization can access this site** 
 Anyone in the organization can access this site to know the information. 
-• **Private – only members can access this site** 
+- **Private – only members can access this site** 
 The site is only accessible to limited number of members.
 8. Click **Next**.
 9.  On the **Add additional owners** field, enter the additional owners name in the organization.
@@ -70,9 +70,9 @@ A **Communication Site** is used to share a content which are created a small se
 3. Click the **+Create site** button. The **Create a site** window opens.
 4. On the **Create a site** window, select **Communication site**. The **Communication Site** window opens.
 5. On the **Choose a design** field, click the drop-menu and choose anyone design. There are three types of design available: 
-• Topic 
-• Showcase 
-• Blank 
+- Topic 
+- Showcase 
+- Blank 
 The preview of the design appears on the left side of the window.
 6. On the **Site name** field, enter your team name.   
 The **Group email address** and **Site Address** appears automatically. 
@@ -86,24 +86,25 @@ You can create a page in both the **Team Site** and **Communication Site** of th
 
 **Procedures**: 
 1. You can create a **Page** by selecting one of the following options:
-• On the **SharePoint Online Team Site** or **SharePoint Online Communication Site**, click the **+New** button and select **Page**. 
-• On the top right corner of the **SharePoint Online** page, click the ![][image1]icon and select **Add a Page**.
+- On the **SharePoint Online Team Site** or **SharePoint Online Communication Site**, click the **+New** button and select **Page**.
+- On the top right corner of the **SharePoint Online** page, click the ![][image1]icon and select **Add a Page**.
 2. On the creation page, enter the title for the page. 
 You can add a background image for the title page by selecting the ![][image2]icon and an image for  the title of the page from the local directory on your computer.
 3. Click **Save and Close**.
 4. On the **Page**, click **+** icon and then select one of the following options: 
-• **Featured Section** 
+- **Featured Section** 
 - **Text**
 - **Image**
 - **File Viewer**
 - **Link**
 - **Embed**
 - **Highlighted Content**
-• **Section Layout**
+- **Section Layout**
 - **One column**
 - **Two columns**
 - **Three columns**
-5. For example, you can create two columns of a Sunflower page with the description of an image  on the left side and the image on the right side of the **Page** and select **Save and Close**. 6\. Once the **Page** is created, click **Publish**. 
+5. For example, you can create two columns of a Sunflower page with the description of an image  on the left side and the image on the right side of the **Page** and select **Save and Close**.
+6. Once the **Page** is created, click **Publish**. 
 The **Published** page appears.
 
 # Creating a Document Library Application in the SharePoint Online
