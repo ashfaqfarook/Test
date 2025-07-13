@@ -47,7 +47,7 @@ more information.
 - **[DELETE /orderId](https://petstore.swagger.io/#/store/deleteOrder)**  
   Introduced a new API endpoint that allows you to delete the purchase order in the petstore.
 
-## Sunset 
+## Sunset Endpoint
 The `GET /pet/findByTags` endpoint is deprecated and in the sunset phase.
 
 This endpoint retrieves the pets based on the tags which affect the emotional state of the pet lovers. You can use the `GET /pet/findByStatus` to retrieve the pets based on the pet's availability which is an alternative to the `GET /pet/findByTags`. By using the `GET /pet/findByStatus`, the pet lovers emotional state is compromised.
