@@ -72,7 +72,7 @@ In this topic, you will learn how to create a pet, upload an image for the pet, 
 3. Create a purchase order for the pet.
 4. Delete a purchase order if you have placed an inappropriate order.
 
-<img src="./sx55czms.png" alt="Pet Purchase Order Process" style="width:6.49097in;height:7in" />
+<img src="./Petstore_process.png" alt="Pet Purchase Order Process" style="width:6.49097in;height:7in" />
 
 ### Example
 
