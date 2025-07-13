@@ -1,5 +1,4 @@
 # Order a New Card For an Account Holder
-*By Muhamed Javid Hussain*
 
 ## Table of Contents
 
@@ -17,7 +16,7 @@
    - [Status Codes and Errors](#status-codes-and-errors)
 5. [Generate Embossing File](#generate-embossing-file)
    - [Get the Card ID](#get-the-card-id)
-   - [Generate the Embossing File](#generate-the-embossing-file-1)
+   - [Generating the Embossing File](#generating-the-embossing-file)
 
 ---
 
@@ -171,7 +170,7 @@ Once the card data is successfully generated, you must generate an embossing fil
 
 The process involves:
 1. [Get the Card ID](#get-the-card-id)
-2. [Generating embossing file](#generate-the-embossing-file-1)
+2. [Generating embossing file](#generating-the-embossing-file)
 
 ### Get the Card ID
 
@@ -303,7 +302,7 @@ curl -X GET 'https://fusion.preprod.zeta.in/api/v1/ifi/140827/orders/e8f6e34f-1d
 | 404 | Order does not exist | Invalid order id |
 | 409 | Already Exists | The order already exists in the system |
 
-### Generate the Embossing File
+### Generating the Embossing File
 
 Fusion Embossing service generates the embossing file for each product type or IFI. To generate the embossing file, use the cardID generated using the GET method.
 
