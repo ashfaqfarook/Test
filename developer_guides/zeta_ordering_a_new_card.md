@@ -1,8 +1,8 @@
-# Order a New Card For an Account Holder
+# Ordering a New Card For an Account Holder
 
 ## Table of Contents
 
-1. [Order a New Card for an Account Holder](#order-a-new-card-for-an-account-holder)
+1. [Ordering a New Card for an Account Holder](#ordering-a-new-card-for-an-account-holder)
    - [Prerequisites](#prerequisites)
 2. [Information about the card](#information-about-the-card)
    - [Front Side Details](#front-side-details)
@@ -20,7 +20,7 @@
 
 ---
 
-## Order a New Card for an Account Holder
+## Ordering a New Card for an Account Holder
 
 ### Prerequisites
 
