@@ -1,17 +1,5 @@
 # Working with Content Archive
 
-**Added in 24.11**
-
----
-
-**Project Information:**
-- **Jira:** [EDUDOCS-499](https://jira.dev.lithium.com/browse/EDUDOCS-499)
-- **PM:** [Sahil Charaya](mailto:sahil.charaya@khoros.com)
-- **Engineers:** [Abhijith BE](mailto:abhijith.be@khoros.com)
-- **Peer Review:** [Asha Cherian](mailto:asha.cherian@khoros.com), [Ryan Pierson](mailto:ryan.pierson@khoros.com)
-
----
-
 ## Table of Contents
 
 1. [About Content Archive](#about-content-archive)
@@ -232,7 +220,7 @@ Use the example below to update the related URL of the archived message (ID: 337
 mutation {
   updateRelatedContentUrlForArchivedMessage(
     messageId: "message:3374",
-    relatedUrl:"https://calvin2.qa.lithium.com/"
+    relatedUrl:"https://docscommunity.com/"
   ) {
     result
     errors {
@@ -440,5 +428,3 @@ mutation {
 ```
 
 ---
-
-*This documentation covers the Content Archive feature added in Aurora v24.11. For additional support or questions, please refer to the project contacts listed at the beginning of this document.*
