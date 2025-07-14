@@ -13,8 +13,6 @@
 
 ## Overview
 
-*Added in 24.10.*
-
 Aurora offers content filtering capabilities that serve as moderation tools to safeguard against the publication of objectionable materials in various areas, including posts, replies, tags, private messages, profile details, and member registrations.
 
 When community members use inappropriate language, the content filters detect it and take appropriate action. This may include blocking the content from being published or substituting the words with predetermined alternatives. Additionally, there are instances where the filters may log the objectionable content without manual intervention.
