@@ -1,17 +1,5 @@
 # Working with Bypass Media Moderation Permission
 
-**Added in 25.02**
-
----
-
-**Project Information:**
-- **Jira:** [EDUDOCS-804](https://jira.dev.lithium.com/browse/EDUDOCS-804)
-- **Dev Ticket:** [LIA-96157](https://jira.dev.lithium.com/browse/LIA-96157)
-- **Engineers:** [Manasvini Arul](mailto:manasvini.arul@khoros.com)
-- **PM:** [Sahil Charaya](mailto:sahil.charaya@khoros.com)
-
----
-
 ## Table of Contents
 
 1. [About Bypass Media Moderation](#about-bypass-media-moderation)
