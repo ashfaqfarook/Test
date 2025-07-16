@@ -136,6 +136,3 @@ mutation {
 }
 ```
 
----
-
-*This documentation covers the Bypass Media Moderation Permission feature added in version 25.02. For additional support or questions, please refer to the project contacts listed at the beginning of this document.*
