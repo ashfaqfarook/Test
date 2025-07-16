@@ -19,7 +19,7 @@ Welcome! This is my portfolio of technical writing work. Below you'll find categ
 - [Working with Pet Store API](https://github.com/Javeed-Writer/Portfolio/blob/main/developer_guides/rest_api_pet_store.md)
 - [Ordering a New Card For an Account Holder](https://github.com/Javeed-Writer/Portfolio/blob/main/developer_guides/rest_api_ordering_a_new_card_zeta.md)
 
-[For More developer guides...](https://github.com/Javeed-Writer/Portfolio/tree/main/developer_guides)
+[For More developer guides, see](https://github.com/Javeed-Writer/Portfolio/tree/main/developer_guides)
 
 ---
 
@@ -28,7 +28,7 @@ Welcome! This is my portfolio of technical writing work. Below you'll find categ
 - [Add Money Feature User Guide](https://github.com/Javeed-Writer/Portfolio/blob/main/user-guides/zeta_add_money_guide.md)
 - [Configuring and Using SharePoint Online](https://github.com/Javeed-Writer/Portfolio/blob/main/user-guides/using_sharepoint_online.md)
 
-[More user guides...](https://github.com/Javeed-Writer/Portfolio/tree/main/user-guides)
+[For More user guides, see](https://github.com/Javeed-Writer/Portfolio/tree/main/user-guides)
 
 ---
 
@@ -36,12 +36,12 @@ Welcome! This is my portfolio of technical writing work. Below you'll find categ
 
 - [Zeta Fusion: Comprehensive Financial Services Platform](https://github.com/Javeed-Writer/Portfolio/blob/main/knowledge_base/zeta_fusion.md)
 
-[More knowledge base articles...](https://github.com/Javeed-Writer/Portfolio/tree/main/knowledge_base)
+[For More knowledge base articles](https://github.com/Javeed-Writer/Portfolio/tree/main/knowledge_base)
 
 ## 📬 Contact
 
-**Email:** javidwriter@gmail.com
-**LinkedIn:** https://www.linkedin.com/in/muhamed-javid/
+- **Email:** javidwriter@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/muhamed-javid/
 
 ---
 
