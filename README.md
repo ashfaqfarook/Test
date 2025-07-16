@@ -14,6 +14,7 @@ Learn more about my background, experience, and approach to technical writing.
 
 ### [User Guides](https://github.com/Javeed-Writer/Portfolio/tree/main/user-guides)
 End-user documentation including tutorials, getting started guides, and troubleshooting resources.
+- [Configuring the Control Panel Settings](/user-guides/configuring the control panel)
 
 ### [Knowledge Bases](https://github.com/Javeed-Writer/Portfolio/tree/main/knowledge_base)
 FAQ systems, support articles, and structured information resources for self-service support.
