@@ -1,4 +1,4 @@
-# Technical Writing Portfolio
+# Muhamed Javid Hussain | Technical Writing Portfolio
 
 Welcome to my technical writing portfolio. This repository showcases my documentation work across different categories and formats.
 
