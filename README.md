@@ -12,18 +12,17 @@ I'm Muhamed Javid Hussain, a senior technical writer who creates clear, user and
 ### [About](https://github.com/Javeed-Writer/Portfolio/tree/main/About)
 Learn more about my background, experience, and approach to technical writing.
 
-### [User Guides](https://github.com/Javeed-Writer/Portfolio/tree/main/User-Guides)
+### [User Guides](https://github.com/Javeed-Writer/Portfolio/tree/main/user-guides)
 End-user documentation including tutorials, getting started guides, and troubleshooting resources.
 
-### [Knowledge Bases](https://github.com/Javeed-Writer/Portfolio/tree/main/Knowledge-Bases)
+### [Knowledge Bases](https://github.com/Javeed-Writer/Portfolio/tree/main/knowledge_base)
 FAQ systems, support articles, and structured information resources for self-service support.
 
-### [Developer Guides](https://github.com/Javeed-Writer/Portfolio/tree/main/Developer-Guides)
+### [Developer Guides](https://github.com/Javeed-Writer/Portfolio/tree/main/developer-guides)
 Technical documentation for developers including API references, integration guides, and code documentation.
 
 ## Contact
-
-Feel free to reach out if you'd like to discuss technical writing opportunities or have questions about my work.
-
 **Email:** javidwriter@gmail.com
 **LinkedIn:** https://www.linkedin.com/in/muhamed-javid/
+
+https://github.com/Javeed-Writer/Portfolio/tree/main/user-guides
