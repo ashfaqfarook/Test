@@ -1,14 +1,14 @@
 ---
 layout:default
-title:configuring the control panel
+title:configuring the control panel settings
 ---
 
 # Contents
-- About
-- System and Security
-- Network Connectivity
-- Hardware and Sound
-- Programs
+- [About](#about)
+- [System and Security](#system-and-security)
+- [Network Connectivity](#network-connectivity)
+- [Hardware and Sound](#hardware-and-sound)
+- [Programs](#programs)
 
 ## About
 The control panel is used to adjust your computer settings such as setting the  security . The control panel has the following sections:  
@@ -25,7 +25,7 @@ In this section, you can create a firewall to protect your PC from threats, chec
 ### Window Defender Firewall
 You can enable the Window Defender Firewall for certain networks based on your preferences. 
 
-• Go to **Control Panel** \> **System and Security** \> **Window Defender Firewall** 
+• Go to **Control Panel** > **System and Security** > **Window Defender Firewall** 
 
 • On the left side of the **Window Defender Firewall** window, Select **Turn Window Defender  Firewall on or off.** 
 
@@ -40,7 +40,7 @@ In this section, you view your network status, connect to a network via SSID, an
 
 You can change your homepage address in your default web browser with the use of **Internet Options** in  **Control Panel** window. 
 
-• Go to **Control Panel** \> **Network and Internet** \> **Internet Options** 
+• Go to **Control Panel** > **Network and Internet** > **Internet Options** 
 The **Internet Properties** window opens. 
 
 • On the **Home page** section of the **General** tab on the **Internet Properties** window, enter your  web address which you want it as your homepage and select **OK** 
@@ -57,7 +57,7 @@ In this section, you can view the devices which are added to your computer. You 
 
 You can add hardware devices such as Light Pen, Scanner in your computer through the **Control Panel**. 
 
-• Go to **Control Panel** \> **Network and Internet** \> **Hardware and Sound** \> **Devices and Printers** • On the header section of the **Devices and Printers** window, select **Add a Device** 
+• Go to **Control Panel** > **Network and Internet** > **Hardware and Sound** > **Devices and Printers** • On the header section of the **Devices and Printers** window, select **Add a Device** 
 The **Add a Device** window opens. 
 
 • A list of available devices appears. 
@@ -68,21 +68,5 @@ The **Add a Device** window opens.
 
 Programs option assist you to configure programs and features for your  computer. 
 
-In this section, you can uninstall a program, view the installed updates, change  the default program
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In this section, you can uninstall a program, view the installed updates, change the default program.
 
