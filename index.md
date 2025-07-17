@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Javeed-Writer Portfolio"
+---
+
 # 👋 About Me
 
 I'm Muhamed Javid Hussain, a senior technical writer who creates clear, user and developer documentation. I specialize in transforming complex technical concepts into accessible content that helps users achieve their goals.
