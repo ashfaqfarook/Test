@@ -7,6 +7,8 @@ I'm Muhamed Javid Hussain, a senior technical writer who creates clear, user and
 - Experience: 9 Years
 - Specialization: User and API documentation, Pre-release software testing, Functional validation, Release Notes
 
+![Visitors](https://hits.sh/github.com/Javeed-Writer/Portfolio.svg?style=flat-square)
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Javeed-Writer.Portfolio)
 
 ## Portfolio Categories
 
