@@ -2,8 +2,6 @@
 layout: default
 title: Configuring and using SharePoint 
 ---
-# Overview
-This guide provides best practices for creating comprehensive API documentation that developers can easily understand and implement.
 
 # Table of Contents
 - [SharePoint Online](#sharepoint-online)
