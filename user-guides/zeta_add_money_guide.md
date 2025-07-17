@@ -1,5 +1,8 @@
-# Add Money Feature User Guide
-
+---
+layout: default
+title: "Adding Money Feature"
+---
+# Adding Money Feature
 *for Zeta For Employees users*
 
 *by Muhamed Javid Hussain*
