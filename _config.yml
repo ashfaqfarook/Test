@@ -12,7 +12,7 @@ plugins:
   - jekyll-paginate
   - jekyll-toc
 
-# Optional: Configure jekyll-toc defaults
+# jekyll-toc configuration (optional, for styling)
 toc:
   min_level: 2
   max_level: 3
