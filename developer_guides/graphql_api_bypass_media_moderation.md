@@ -1,4 +1,8 @@
-# Working with Bypass Media Moderation Permission
+---
+layout: default
+title: "Working with Bypass Media Moderation"
+---
+# Working with Bypass Media Moderation
 
 ## Table of Contents
 
