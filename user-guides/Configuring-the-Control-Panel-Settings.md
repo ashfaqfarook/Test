@@ -1,6 +1,6 @@
 ---
-layout:default
-title:configuring the control panel settings
+layout: default
+title: configuring the control panel settings
 ---
 
 # Contents
