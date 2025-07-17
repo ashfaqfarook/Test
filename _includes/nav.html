@@ -10,24 +10,7 @@
     <hr>
     <div class="toc">
       <h3>On this page</h3>
-      <ul>
-        {% if page.toc %}
-          {{ page.toc }}
-        {% else %}
-          {% assign min_level = 2 %}
-          {% assign max_level = 3 %}
-          {% capture toc_content %}
-            {% for heading in page.content | split: '\n' %}
-              {% if heading contains '## ' %}
-                <li style="margin-left:0"><a href="#{{ heading | replace: '## ', '' | slugify }}">{{ heading | replace: '## ', '' }}</a></li>
-              {% elsif heading contains '### ' %}
-                <li style="margin-left:1em"><a href="#{{ heading | replace: '### ', '' | slugify }}">{{ heading | replace: '### ', '' }}</a></li>
-              {% endif %}
-            {% endfor %}
-          {% endcapture %}
-          {{ toc_content }}
-        {% endif %}
-      </ul>
+      {% toc %}
     </div>
   </nav>
 </aside>
