@@ -10,3 +10,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-archives
   - jekyll-paginate
+  - jekyll-toc
+
+# Optional: Configure jekyll-toc defaults
+toc:
+  min_level: 2
+  max_level: 3
+  ordered_list: false
+  no_toc_section_class: "no_toc_section"
+  list_class: "toc-list"
+  sublist_class: "toc-sublist"
+  item_class: "toc-list-item"
