@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Working with Content Filter"
+---
+
 # Working with Content Filter
 ## Table of Contents
 
