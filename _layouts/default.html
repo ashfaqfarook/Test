@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        {% include nav.html %}
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <hr>
+      <p>&copy; {{ site.title }} - {{ site.description }}</p>
+    </footer>
+  </body>
+</html>
