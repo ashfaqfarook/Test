@@ -1,0 +1,12 @@
+title: "Javeed-Writer Portfolio"
+description: "A portfolio of technical writing, user guides, developer docs, and knowledge base articles."
+theme: minima
+baseurl: "" # leave it blank for user/organization site
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
