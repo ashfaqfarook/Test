@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Working with Content Archive"
+---
 # Working with Content Archive
 
 ## Table of Contents
