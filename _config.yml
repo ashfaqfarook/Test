@@ -1,23 +1,57 @@
-title: "Javeed-Writer Portfolio"
-description: "A portfolio of technical writing, user guides, developer docs, and knowledge base articles."
-theme: minima
-baseurl: "" # leave it blank for user/organization site
-markdown: kramdown
+title: Muhamed Javid Hussain - Technical Writer Portfolio
+description: Senior Technical Writer specializing in user and developer documentation
+author: Muhamed Javid Hussain
+email: your-email@example.com
+url: "https://javeed-writer.github.io"
+baseurl: "/Portfolio"
 
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
-  - jekyll-paginate
-  - jekyll-toc
 
-# jekyll-toc configuration (optional, for styling)
-toc:
-  min_level: 2
-  max_level: 3
-  ordered_list: false
-  no_toc_section_class: "no_toc_section"
-  list_class: "toc-list"
-  sublist_class: "toc-sublist"
-  item_class: "toc-list-item"
+# Navigation structure
+navigation:
+  - name: "Home"
+    link: "/"
+  - name: "About"
+    link: "/about/"
+  - name: "Developer Guides"
+    link: "/developer_guides/"
+  - name: "User Guides" 
+    link: "/user-guides/"
+  - name: "Knowledge Base"
+    link: "/knowledge_base/"
+  - name: "Contact"
+    link: "/contact/"
+
+# Sidebar categories
+sidebar_categories:
+  developer_guides:
+    - name: "Pet Store API"
+      link: "/developer_guides/rest_api_pet_store/"
+    - name: "Content Archive API"
+      link: "/developer_guides/graphql_api_content_archive/"
+    - name: "Card Ordering API"
+      link: "/developer_guides/rest_api_ordering_a_new_card_zeta/"
+    - name: "Content Filter API"
+      link: "/developer_guides/graphql_api_content_filter/"
+    - name: "Media Moderation API"
+      link: "/developer_guides/graphql_api_bypass_media_moderation/"
+  
+  user_guides:
+    - name: "Add Money Feature"
+      link: "/user-guides/zeta_add_money_guide/"
+    - name: "SharePoint Online"
+      link: "/user-guides/using_sharepoint_online/"
+    - name: "Control Panel Settings"
+      link: "/user-guides/Configuring-the-Control-Panel-Settings/"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
