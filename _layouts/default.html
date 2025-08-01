@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="layout-container">
@@ -21,31 +21,45 @@
         <header class="header">
             <div class="header-content">
                 <div class="logo">
-                    <h1><a href="{{ '/' | relative_url }}">{{ site.author }}</a></h1>
-                    <p>Technical Writer Portfolio</p>
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1><a href="{{ '/' | relative_url }}">{{ site.author }}</a></h1>
+                        <p>Technical Writer</p>
+                    </div>
                 </div>
+                
                 <nav class="main-nav">
                     {% for item in site.navigation %}
                     <a href="{{ item.link | relative_url }}" 
                        class="nav-link {% if page.url == item.link %}active{% endif %}">
-                        {{ item.name }}
+                        <i class="{{ item.icon }}"></i>
+                        <span>{{ item.name }}</span>
                     </a>
                     {% endfor %}
                 </nav>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
+                
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
         </header>
 
-        <!-- Main Layout -->
+        <!-- Main Layout (Two-Pane) -->
         <div class="main-layout">
             <!-- Left Sidebar -->
-            <aside class="sidebar left-sidebar">
+            <aside class="sidebar">
                 <div class="sidebar-content">
                     <div class="profile-section">
                         <div class="profile-avatar">
-                            <i class="fas fa-user-tie"></i>
+                            <img src="https://via.placeholder.com/120x120/667eea/ffffff?text=MJ" alt="Profile" class="avatar-img">
+                            <div class="status-indicator"></div>
                         </div>
                         <h3>{{ site.author }}</h3>
                         <p class="profile-title">Senior Technical Writer</p>
@@ -54,20 +68,84 @@
                                 <span class="stat-number">9</span>
                                 <span class="stat-label">Years Experience</span>
                             </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                     
-                    <div class="quick-links">
-                        <h4>Quick Links</h4>
-                        <a href="{{ '/developer_guides/' | relative_url }}" class="quick-link">
-                            <i class="fas fa-code"></i> Developer Guides
-                        </a>
-                        <a href="{{ '/user-guides/' | relative_url }}" class="quick-link">
-                            <i class="fas fa-book"></i> User Guides
-                        </a>
-                        <a href="{{ '/knowledge_base/' | relative_url }}" class="quick-link">
-                            <i class="fas fa-database"></i> Knowledge Base
-                        </a>
+                    <!-- Skills Section -->
+                    <div class="skills-section">
+                        <h4><i class="fas fa-star"></i> Core Skills</h4>
+                        
+                        <div class="skill-category">
+                            <h5>Documentation Types</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">API Documentation</span>
+                                <span class="skill-tag">User Guides</span>
+                                <span class="skill-tag">Developer Docs</span>
+                                <span class="skill-tag">Release Notes</span>
+                                <span class="skill-tag">Knowledge Base</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h5>Technical Skills</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">GraphQL</span>
+                                <span class="skill-tag">OpenAPI</span>
+                                <span class="skill-tag">Markdown</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Jekyll</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h5>Tools & Platforms</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GitBook</span>
+                                <span class="skill-tag">Confluence</span>
+                                <span class="skill-tag">Notion</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">VS Code</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h5>Industries</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">FinTech</span>
+                                <span class="skill-tag">SaaS</span>
+                                <span class="skill-tag">Enterprise</span>
+                                <span class="skill-tag">Developer Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact CTA -->
+                    <div class="contact-cta">
+                        <div class="cta-content">
+                            <h4>Ready to Collaborate?</h4>
+                            <p>Let's create documentation that truly serves your users.</p>
+                            <a href="{{ '/contact/' | relative_url }}" class="cta-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Get in Touch
+                            </a>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -75,8 +153,13 @@
             <!-- Main Content -->
             <main class="main-content">
                 <div class="content-wrapper">
-                    {% if page.title %}
+                    {% if page.title and page.title != 'Home' %}
                     <div class="page-header">
+                        <div class="breadcrumb">
+                            <a href="{{ '/' | relative_url }}">Home</a>
+                            <i class="fas fa-chevron-right"></i>
+                            <span>{{ page.title }}</span>
+                        </div>
                         <h1 class="page-title">{{ page.title }}</h1>
                         {% if page.description %}
                         <p class="page-description">{{ page.description }}</p>
@@ -87,87 +170,64 @@
                     <div class="content">
                         {{ content }}
                     </div>
-                </div>
-            </main>
-
-            <!-- Right Sidebar -->
-            <aside class="sidebar right-sidebar">
-                <div class="sidebar-content">
+                    
+                    <!-- Contextual Navigation -->
                     {% if page.url contains 'developer_guides' %}
-                    <div class="toc-section">
+                    <div class="contextual-nav">
                         <h4><i class="fas fa-code"></i> Developer Guides</h4>
-                        <ul class="toc-list">
+                        <div class="nav-grid">
                             {% for guide in site.sidebar_categories.developer_guides %}
-                            <li>
-                                <a href="{{ guide.link | relative_url }}" 
-                                   class="toc-link {% if page.url == guide.link %}active{% endif %}">
-                                    {{ guide.name }}
-                                </a>
-                            </li>
+                            <a href="{{ guide.link | relative_url }}" 
+                               class="nav-card {% if page.url == guide.link %}active{% endif %}">
+                                <div class="nav-card-icon">
+                                    <i class="fas fa-file-code"></i>
+                                </div>
+                                <div class="nav-card-content">
+                                    <h5>{{ guide.name }}</h5>
+                                    <p>{{ guide.description | default: "Developer documentation" }}</p>
+                                </div>
+                            </a>
                             {% endfor %}
-                        </ul>
+                        </div>
                     </div>
                     {% elsif page.url contains 'user-guides' %}
-                    <div class="toc-section">
+                    <div class="contextual-nav">
                         <h4><i class="fas fa-book"></i> User Guides</h4>
-                        <ul class="toc-list">
+                        <div class="nav-grid">
                             {% for guide in site.sidebar_categories.user_guides %}
-                            <li>
-                                <a href="{{ guide.link | relative_url }}" 
-                                   class="toc-link {% if page.url == guide.link %}active{% endif %}">
-                                    {{ guide.name }}
-                                </a>
-                            </li>
+                            <a href="{{ guide.link | relative_url }}" 
+                               class="nav-card {% if page.url == guide.link %}active{% endif %}">
+                                <div class="nav-card-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="nav-card-content">
+                                    <h5>{{ guide.name }}</h5>
+                                    <p>{{ guide.description | default: "User documentation" }}</p>
+                                </div>
+                            </a>
                             {% endfor %}
-                        </ul>
-                    </div>
-                    {% else %}
-                    <div class="toc-section">
-                        <h4><i class="fas fa-bookmark"></i> Categories</h4>
-                        <div class="category-cards">
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h5>Developer Guides</h5>
-                                <p>{{ site.sidebar_categories.developer_guides | size }} guides</p>
-                                <a href="{{ '/developer_guides/' | relative_url }}" class="category-link">
-                                    View All <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                            <div class="category-card">
-                                <div class="category-icon">
-                                    <i class="fas fa-book"></i>
-                                </div>
-                                <h5>User Guides</h5>
-                                <p>{{ site.sidebar_categories.user_guides | size }} guides</p>
-                                <a href="{{ '/user-guides/' | relative_url }}" class="category-link">
-                                    View All <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     {% endif %}
-                    
-                    <div class="contact-section">
-                        <h4><i class="fas fa-envelope"></i> Get in Touch</h4>
-                        <p>Want to collaborate or have questions?</p>
-                        <a href="{{ '/contact/' | relative_url }}" class="contact-btn">
-                            <i class="fas fa-paper-plane"></i> Contact Me
-                        </a>
-                    </div>
                 </div>
-            </aside>
+            </main>
         </div>
     </div>
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay">
         <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <h3>Navigation</h3>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
             <nav class="mobile-nav">
                 {% for item in site.navigation %}
                 <a href="{{ item.link | relative_url }}" class="mobile-nav-link">
-                    {{ item.name }}
+                    <i class="{{ item.icon }}"></i>
+                    <span>{{ item.name }}</span>
                 </a>
                 {% endfor %}
             </nav>
