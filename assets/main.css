@@ -19,7 +19,7 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 20px;
 }
 
 /* Header and Navigation */
@@ -428,6 +428,7 @@ body {
 /* Page content styling */
 .page-content {
     padding: 1rem 0;
+    margin: 0 2rem;
 }
 
 .guide-content h1,
@@ -607,7 +608,11 @@ body {
 
 @media (max-width: 480px) {
     .wrapper {
-        padding: 0 1.5rem;
+        padding: 0 15px;
+    }
+    
+    .page-content {
+        margin: 0 1rem;
     }
     
     .portfolio-card,
