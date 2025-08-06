@@ -19,7 +19,7 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 /* Header and Navigation */
@@ -422,6 +422,12 @@ body {
 .guide-content {
     font-size: 1.1rem;
     line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* Page content styling */
+.page-content {
+    padding: 1rem 0;
 }
 
 .guide-content h1,
@@ -601,7 +607,7 @@ body {
 
 @media (max-width: 480px) {
     .wrapper {
-        padding: 0 15px;
+        padding: 0 1.5rem;
     }
     
     .portfolio-card,

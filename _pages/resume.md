@@ -155,7 +155,6 @@ permalink: /resume/
                 <div>
                     <h3 style="color: #2c3e50; margin-bottom: 0.25rem;">Bachelor of Engineering (B.E.)</h3>
                     <p style="color: #666; font-weight: 500;">Anna University, Chennai</p>
-                    <p style="color: #888; font-size: 0.9rem;">Aeronautical Engineering</p>
                 </div>
                 <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">
                     2015
