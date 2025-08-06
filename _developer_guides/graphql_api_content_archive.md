@@ -3,6 +3,7 @@ layout: guide
 title: "Working with Content Archive"
 description: "Comprehensive guide for implementing content archival systems using GraphQL, including data retention policies and content lifecycle management."
 author: "Muhamed Javid Hussain"
+date: 2024-09-15
 tags: ["GraphQL", "Content Archive", "Data Management", "API Documentation"]
 category: "developer_guides"
 ---

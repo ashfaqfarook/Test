@@ -3,6 +3,7 @@ layout: guide
 title: "Zeta Fusion: Comprehensive Financial Services Platform"
 description: "In-depth overview of Zeta Fusion Platform-as-a-Service solution, covering architecture, compliance, banking infrastructure, and integration capabilities."
 author: "Muhamed Javid Hussain"
+date: 2024-04-10
 tags: ["Knowledge Base", "PaaS", "Financial Services", "Platform Overview"]
 category: "knowledge_base"
 ---

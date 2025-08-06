@@ -3,6 +3,7 @@ layout: guide
 title: "Working with Content Filter"
 description: "GraphQL API implementation guide for content filtering systems, including query examples, mutations, and content moderation workflows."
 author: "Muhamed Javid Hussain"
+date: 2024-12-01
 tags: ["GraphQL", "Content Filter", "API Documentation", "Content Moderation"]
 category: "developer_guides"
 ---
@@ -10,15 +11,17 @@ category: "developer_guides"
 # Working with Content Filter
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [Create a Content Filter](#create-a-content-filter)
-   - [Constraints](#constraints)
-   - [Example](#example)
-3. [Retrieve Content Filters](#retrieve-content-filters)
-4. [Update a Content Filter](#update-a-content-filter)
-5. [Delete a Content Filter](#delete-a-content-filter)
-6. [Create or Update Filter Words](#create-or-update-filter-words)
-7. [Remove Filter Words](#remove-filter-words)
+- [Working with Content Filter](#working-with-content-filter)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Create a Content Filter](#create-a-content-filter)
+    - [Constraints](#constraints)
+    - [Example](#example)
+  - [Retrieve Content Filters](#retrieve-content-filters)
+  - [Update a Content Filter](#update-a-content-filter)
+  - [Delete a Content Filter](#delete-a-content-filter)
+  - [Create or Update Filter Words](#create-or-update-filter-words)
+  - [Remove Filter Words](#remove-filter-words)
 
 ## Overview
 

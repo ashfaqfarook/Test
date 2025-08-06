@@ -3,6 +3,7 @@ layout: guide
 title: "Ordering a New Card For an Account Holder"
 description: "REST API guide for ordering new cards in the Zeta platform, including API endpoints, request/response examples, and implementation details."
 author: "Muhamed Javid Hussain"
+date: 2024-08-10
 tags: ["REST API", "Zeta Platform", "Card Ordering", "Financial Services"]
 category: "developer_guides"
 ---

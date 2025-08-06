@@ -3,6 +3,7 @@ layout: guide
 title: "Adding Money Feature"
 description: "Step-by-step user guide for adding money to Zeta cash cards using debit cards and net banking methods."
 author: "Muhamed Javid Hussain"
+date: 2024-07-25
 tags: ["User Guide", "Zeta", "Mobile App", "Financial Services"]
 category: "user_guides"
 ---

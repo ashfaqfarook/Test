@@ -233,6 +233,162 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Portfolio Card Styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #e8f4fd 0%, #f0f8ff 100%);
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.card-description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.card-meta i {
+    color: #3498db;
+}
+
+.card-tags {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.card-tag {
+    display: inline-block;
+    background: #e8f4fd;
+    color: #2980b9;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* Article Grid for enhanced card display */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.article-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    height: fit-content;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.article-card .card-icon {
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1rem;
+}
+
+.article-card .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.article-card .card-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Special placeholder card styles */
+.placeholder-card {
+    border: 2px dashed #e9ecef !important;
+    background: #fafbfc !important;
+}
+
+.placeholder-card .card-icon {
+    color: #bdc3c7 !important;
+    background: #f8f9fa !important;
+}
+
+.placeholder-card .card-title {
+    color: #7f8c8d !important;
+}
+
+.placeholder-card .card-description {
+    color: #95a5a6 !important;
+}
+
 .btn-primary {
     background: #3498db;
     color: white;
@@ -431,11 +587,32 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .article-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
     .wrapper {
         padding: 0 15px;
+    }
+    
+    .portfolio-card,
+    .article-card {
+        padding: 1.5rem;
+    }
+    
+    .card-icon {
+        font-size: 2rem !important;
+        width: 50px !important;
+        height: 50px !important;
     }
     
     .hero {

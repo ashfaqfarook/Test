@@ -3,6 +3,7 @@ layout: guide
 title: "Configuring and Using SharePoint Online"
 description: "Complete guide for configuring and using SharePoint Online, covering setup procedures, user management, and collaboration features."
 author: "Muhamed Javid Hussain"
+date: 2024-06-12
 tags: ["User Guide", "SharePoint", "Microsoft 365", "Collaboration"]
 category: "user_guides"
 ---

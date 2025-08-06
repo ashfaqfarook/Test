@@ -3,6 +3,7 @@ layout: guide
 title: "Working with Pet Store API"
 description: "Comprehensive guide for Pet Store API endpoints, including creating and managing pet purchase orders with practical examples and code samples."
 author: "Muhamed Javid Hussain"
+date: 2024-11-15
 tags: ["REST API", "Pet Store", "Swagger", "API Documentation"]
 category: "developer_guides"
 ---

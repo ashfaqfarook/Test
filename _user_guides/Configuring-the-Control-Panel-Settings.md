@@ -3,6 +3,7 @@ layout: guide
 title: "Configuring the Control Panel Settings"
 description: "Detailed instructions for configuring control panel settings, including security settings, user preferences, and system optimization."
 author: "Muhamed Javid Hussain"
+date: 2024-05-18
 tags: ["User Guide", "System Configuration", "Security", "Administration"]
 category: "user_guides"
 ---

@@ -3,6 +3,7 @@ layout: guide
 title: "Working with Bypass Media Moderation"
 description: "Technical documentation for implementing bypass mechanisms in GraphQL-based media moderation systems, including security considerations and implementation patterns."
 author: "Muhamed Javid Hussain"
+date: 2024-10-20
 tags: ["GraphQL", "Media Moderation", "Security", "API Documentation"]
 category: "developer_guides"
 ---

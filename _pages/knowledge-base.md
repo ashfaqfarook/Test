@@ -22,39 +22,57 @@ permalink: /knowledge-base/
                 <i class="fas fa-database"></i>
             </div>
             <h3 class="card-title">{{ article.title }}</h3>
+            
+            {% if article.date or article.author %}
+            <div class="card-meta">
+                {% if article.author %}
+                    <span><i class="fas fa-user"></i> {{ article.author }}</span>
+                {% endif %}
+                {% if article.date %}
+                    <span><i class="fas fa-calendar"></i> {{ article.date | date: "%b %Y" }}</span>
+                {% endif %}
+            </div>
+            {% endif %}
+            
             <p class="card-description">
-                {{ article.description | default: "Knowledge base article and technical documentation." }}
+                {{ article.description | default: article.excerpt | default: "In-depth knowledge base article covering technical concepts, system architecture, and comprehensive platform documentation." | strip_html | truncate: 150 }}
             </p>
+            
             {% if article.tags %}
-                <div style="margin: 1rem 0;">
+                <div class="card-tags">
                     {% for tag in article.tags %}
-                        <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">{{ tag }}</span>
+                        <span class="card-tag">{{ tag }}</span>
                     {% endfor %}
                 </div>
             {% endif %}
-            <a href="{{ article.url | relative_url }}" class="btn btn-primary">
-                <i class="fas fa-eye"></i> Read Article
-            </a>
+            
+            <div class="card-footer">
+                <a href="{{ article.url | relative_url }}" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> Read Article
+                </a>
+            </div>
         </div>
     {% endfor %}
     
-    <!-- Placeholder for future knowledge base articles -->
+    <!-- Show placeholder if no articles or few articles -->
     {% if site.knowledge_base.size == 0 or site.knowledge_base.size < 3 %}
-        <div class="portfolio-card" style="border: 2px dashed #e9ecef; background: #fafbfc;">
-            <div class="card-icon" style="color: #bdc3c7;">
+        <div class="portfolio-card placeholder-card">
+            <div class="card-icon">
                 <i class="fas fa-plus-circle"></i>
             </div>
-            <h3 class="card-title" style="color: #7f8c8d;">More Articles Coming Soon</h3>
-            <p class="card-description" style="color: #95a5a6;">
+            <h3 class="card-title">More Articles Coming Soon</h3>
+            <p class="card-description">
                 Additional knowledge base articles and in-depth technical documentation are currently being developed. 
-                Check back soon for more comprehensive coverage of various platforms and technologies.
+                Check back soon for comprehensive coverage of various platforms and technologies.
             </p>
-            <div style="margin: 1rem 0;">
-                <span style="background: #f8f9fa; color: #6c757d; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Coming Soon</span>
+            <div class="card-tags">
+                <span class="card-tag" style="background: #f8f9fa; color: #6c757d;">Coming Soon</span>
             </div>
-            <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline" style="border-color: #bdc3c7; color: #7f8c8d;">
-                <i class="fas fa-envelope"></i> Request Topics
-            </a>
+            <div class="card-footer">
+                <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline" style="border-color: #bdc3c7; color: #7f8c8d;">
+                    <i class="fas fa-envelope"></i> Request Topics
+                </a>
+            </div>
         </div>
     {% endif %}
 </div>

@@ -22,21 +22,59 @@ permalink: /user-guides/
                 <i class="fas fa-users"></i>
             </div>
             <h3 class="card-title">{{ guide.title }}</h3>
+            
+            {% if guide.date or guide.author %}
+            <div class="card-meta">
+                {% if guide.author %}
+                    <span><i class="fas fa-user"></i> {{ guide.author }}</span>
+                {% endif %}
+                {% if guide.date %}
+                    <span><i class="fas fa-calendar"></i> {{ guide.date | date: "%b %Y" }}</span>
+                {% endif %}
+            </div>
+            {% endif %}
+            
             <p class="card-description">
-                {{ guide.description | default: "User guide and step-by-step documentation." }}
+                {{ guide.description | default: guide.excerpt | default: "Step-by-step user guide designed to help users navigate features and accomplish their goals with ease." | strip_html | truncate: 150 }}
             </p>
+            
             {% if guide.tags %}
-                <div style="margin: 1rem 0;">
+                <div class="card-tags">
                     {% for tag in guide.tags %}
-                        <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">{{ tag }}</span>
+                        <span class="card-tag">{{ tag }}</span>
                     {% endfor %}
                 </div>
             {% endif %}
-            <a href="{{ guide.url | relative_url }}" class="btn btn-primary">
-                <i class="fas fa-eye"></i> View Guide
-            </a>
+            
+            <div class="card-footer">
+                <a href="{{ guide.url | relative_url }}" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View Guide
+                </a>
+            </div>
         </div>
     {% endfor %}
+    
+    <!-- Show a message if no guides are available -->
+    {% if site.user_guides.size == 0 %}
+        <div class="portfolio-card placeholder-card">
+            <div class="card-icon">
+                <i class="fas fa-plus-circle"></i>
+            </div>
+            <h3 class="card-title">User Guides Coming Soon</h3>
+            <p class="card-description">
+                Step-by-step user guides and tutorials are currently being developed. 
+                These will include feature walkthroughs, configuration guides, and troubleshooting resources.
+            </p>
+            <div class="card-tags">
+                <span class="card-tag" style="background: #f8f9fa; color: #6c757d;">Coming Soon</span>
+            </div>
+            <div class="card-footer">
+                <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline" style="border-color: #bdc3c7; color: #7f8c8d;">
+                    <i class="fas fa-envelope"></i> Request Guides
+                </a>
+            </div>
+        </div>
+    {% endif %}
 </div>
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
