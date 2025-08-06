@@ -46,66 +46,6 @@ title: "About Me"
     </div>
 </section>
 
-<section style="padding: 4rem 0;">
-    <div class="wrapper">
-        <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #2c3e50;">
-            My Portfolio
-        </h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-card">
-                <div class="card-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3 class="card-title">Developer Guides</h3>
-                <p class="card-description">
-                    Comprehensive API documentation and technical guides for developers, including REST API references, 
-                    GraphQL documentation, and integration tutorials.
-                </p>
-                <ul class="card-items">
-                    {% for guide in site.developer_guides limit:3 %}
-                        <li><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                <a href="{{ '/developer-guides/' | relative_url }}" class="btn btn-primary">View All Developer Guides</a>
-            </div>
-            
-            <div class="portfolio-card">
-                <div class="card-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3 class="card-title">User Guides</h3>
-                <p class="card-description">
-                    Step-by-step user guides and tutorials designed to help end-users navigate software features 
-                    and accomplish their goals with ease.
-                </p>
-                <ul class="card-items">
-                    {% for guide in site.user_guides limit:3 %}
-                        <li><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                <a href="{{ '/user-guides/' | relative_url }}" class="btn btn-primary">View All User Guides</a>
-            </div>
-            
-            <div class="portfolio-card">
-                <div class="card-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3 class="card-title">Knowledge Base</h3>
-                <p class="card-description">
-                    In-depth articles and comprehensive documentation covering platform overviews, technical concepts, 
-                    and detailed system explanations.
-                </p>
-                <ul class="card-items">
-                    {% for article in site.knowledge_base limit:3 %}
-                        <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                <a href="{{ '/knowledge-base/' | relative_url }}" class="btn btn-primary">View Knowledge Base</a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section style="background: #f8f9fa; padding: 4rem 0;">
     <div class="wrapper">
         <div style="text-align: center;">
