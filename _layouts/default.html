@@ -17,49 +17,23 @@
 </head>
 <body>
     <div class="layout-container">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="logo-text">
-                        <h1><a href="{{ '/' | relative_url }}">{{ site.author }}</a></h1>
-                        <p>Technical Writer</p>
-                    </div>
-                </div>
-                
-                <nav class="main-nav">
-                    {% for item in site.navigation %}
-                    <a href="{{ item.link | relative_url }}" 
-                       class="nav-link {% if page.url == item.link %}active{% endif %}">
-                        <i class="{{ item.icon }}"></i>
-                        <span>{{ item.name }}</span>
-                    </a>
-                    {% endfor %}
-                </nav>
-                
-                <div class="header-actions">
-                    <button class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <!-- Main Layout (Two-Pane) -->
-        <div class="main-layout">
-            <!-- Left Sidebar -->
-            <aside class="sidebar">
+        <!-- Single Page Layout with Sticky Sidebar -->
+        <div class="single-page-layout">
+            <!-- Sticky Left Sidebar (20%) -->
+            <aside class="sticky-sidebar">
                 <div class="sidebar-content">
+                    <!-- Profile Section -->
                     <div class="profile-section">
-                        <h3>{{ site.author }}</h3>
-                        <p class="profile-title">Senior Technical Writer</p>
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="logo-text">
+                                <h1><a href="{{ '/' | relative_url }}">{{ site.author }}</a></h1>
+                                <p>Technical Writer</p>
+                            </div>
                         </div>
+                        
                         <div class="social-links">
                             <a href="#" class="social-link" title="LinkedIn">
                                 <i class="fab fa-linkedin"></i>
@@ -71,6 +45,49 @@
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
+                    </div>
+                    
+                    <!-- Navigation Menu -->
+                    <nav class="sidebar-nav">
+                        <ul class="nav-main">
+                            {% for item in site.navigation %}
+                                {% if item.submenu %}
+                                    <li class="nav-item has-submenu">
+                                        <a href="#" class="nav-link dropdown-toggle">
+                                            <i class="{{ item.icon }}"></i>
+                                            <span>{{ item.name }}</span>
+                                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                                        </a>
+                                        <ul class="nav-submenu">
+                                            {% for subitem in item.submenu %}
+                                                <li>
+                                                    <a href="{{ subitem.link | relative_url }}" 
+                                                       class="nav-link {% if page.url contains subitem.link %}active{% endif %}">
+                                                        <i class="{{ subitem.icon }}"></i>
+                                                        <span>{{ subitem.name }}</span>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                {% else %}
+                                    <li class="nav-item">
+                                        <a href="{{ item.link | relative_url }}" 
+                                           class="nav-link {% if page.url == item.link %}active{% endif %}">
+                                            <i class="{{ item.icon }}"></i>
+                                            <span>{{ item.name }}</span>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    
+                    <!-- Theme Toggle -->
+                    <div class="sidebar-actions">
+                        <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
                     </div>
                     
                     <!-- Contact CTA -->
@@ -87,8 +104,8 @@
                 </div>
             </aside>
 
-            <!-- Main Content -->
-            <main class="main-content">
+            <!-- Main Content Area (80%) -->
+            <main class="main-content-area">
                 <div class="content-wrapper">
                     {% if page.title and page.title != 'Home' %}
                     <div class="page-header">
@@ -151,7 +168,7 @@
         </div>
     </div>
 
-    <!-- Mobile Menu Overlay -->
+    <!-- Mobile Menu for smaller screens -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay">
         <div class="mobile-menu-content">
             <div class="mobile-menu-header">
@@ -162,14 +179,34 @@
             </div>
             <nav class="mobile-nav">
                 {% for item in site.navigation %}
-                <a href="{{ item.link | relative_url }}" class="mobile-nav-link">
-                    <i class="{{ item.icon }}"></i>
-                    <span>{{ item.name }}</span>
-                </a>
+                    {% if item.submenu %}
+                        <div class="mobile-nav-group">
+                            <div class="mobile-nav-group-title">
+                                <i class="{{ item.icon }}"></i>
+                                <span>{{ item.name }}</span>
+                            </div>
+                            {% for subitem in item.submenu %}
+                                <a href="{{ subitem.link | relative_url }}" class="mobile-nav-link submenu-item">
+                                    <i class="{{ subitem.icon }}"></i>
+                                    <span>{{ subitem.name }}</span>
+                                </a>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <a href="{{ item.link | relative_url }}" class="mobile-nav-link">
+                            <i class="{{ item.icon }}"></i>
+                            <span>{{ item.name }}</span>
+                        </a>
+                    {% endif %}
                 {% endfor %}
             </nav>
         </div>
     </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
