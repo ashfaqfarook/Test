@@ -41,7 +41,7 @@ permalink: /knowledge-base/
                 <li>Development tools and integration capabilities</li>
             </ul>
         </div>
-        <a href="{{ '/knowledge_base/zeta_fusion.md' | relative_url }}" class="btn btn-primary">
+        <a href="{{ '/knowledge_base/zeta_fusion/' | relative_url }}" class="btn btn-primary">
             <i class="fas fa-eye"></i> Read Article
         </a>
     </div>

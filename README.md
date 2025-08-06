@@ -1,110 +1,48 @@
-# Javid Hussain | Technical Writing Portfolio
+# Javid Hussain - Technical Writing Portfolio
 
-A professional portfolio website showcasing technical writing expertise, built with Jekyll and hosted on GitHub Pages.
+A professional Jekyll-based portfolio website showcasing technical writing samples, API documentation, user guides, and knowledge base articles.
 
-## 🚀 Live Website
+## 🚀 Quick Start
 
-Visit the portfolio at: [https://javeed-writer.github.io/Tech-writing-portfolio](https://javeed-writer.github.io/Tech-writing-portfolio)
+This site is built with Jekyll and designed to be deployed on GitHub Pages.
 
-## 📋 About
+### GitHub Pages Deployment
 
-This portfolio showcases the technical writing work of Muhamed Javid Hussain, a senior technical writer with 9+ years of experience in creating clear, user-focused documentation. The site features:
+1. Push your changes to the `main` branch
+2. GitHub Actions will automatically build and deploy the site
+3. Your site will be available at `https://ashfaqfarook.github.io/Test/`
 
-- **Developer Guides**: API documentation, technical references, and integration guides
-- **User Guides**: Step-by-step tutorials and user-friendly documentation
-- **Knowledge Base**: In-depth articles and comprehensive platform overviews
+### Local Development (Optional)
 
-## 🏗️ Built With
+If you want to run the site locally:
 
-- **Jekyll** - Static site generator
-- **GitHub Pages** - Hosting and deployment
-- **Custom CSS** - Responsive design inspired by modern portfolio sites
-- **Font Awesome** - Icons and visual elements
-- **Google Fonts** - Typography (Inter font family)
+1. Install Ruby (3.1.0 or higher)
+2. Install bundler: `gem install bundler`
+3. Install dependencies: `bundle install`
+4. Run the site: `bundle exec jekyll serve`
+5. Open `http://localhost:4000` in your browser
 
-## 📁 Project Structure
+## � Site Structure
 
-```
-├── _config.yml              # Jekyll configuration
-├── _layouts/                 # Page templates
-├── _pages/                   # Static pages (contact, resume, etc.)
-├── _developer_guides/        # Developer documentation collection
-├── _user_guides/            # User guide collection
-├── _knowledge_base/         # Knowledge base articles collection
-├── assets/                  # CSS, JS, and image files
-├── .github/workflows/       # GitHub Actions for deployment
-└── index.html              # Homepage
-```
+- `_layouts/` - Page templates
+- `_pages/` - Main site pages
+- `_developer_guides/` - Developer documentation samples
+- `_user_guides/` - User guide samples  
+- `_knowledge_base/` - In-depth technical articles
+- `assets/` - CSS, JavaScript, and images
 
-## � Local Development
+## � Features
 
-To run this site locally:
+- Responsive design with modern styling
+- Collection-based content organization
+- SEO optimized with Jekyll SEO Tag
+- GitHub Pages compatible
+- Professional portfolio layout
 
-1. **Prerequisites**
-   - Ruby (version 3.1 or higher)
-   - Bundler gem
+## 📧 Contact
 
-2. **Setup**
-   ```bash
-   git clone https://github.com/Javeed-Writer/Tech-writing-portfolio.git
-   cd Tech-writing-portfolio
-   bundle install
-   ```
-
-3. **Run locally**
-   ```bash
-   bundle exec jekyll serve
-   ```
-   
-4. **View the site**
-   Open [http://localhost:4000](http://localhost:4000) in your browser
-
-## 📱 Features
-
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean, professional design with smooth animations
-- **SEO Optimized**: Proper meta tags, structured data, and semantic HTML
-- **Fast Loading**: Optimized assets and efficient CSS/JS
-- **Accessible**: WCAG compliant design with proper contrast and navigation
-- **Portfolio Navigation**: Organized content with dropdown menus for easy navigation
-
-## 📝 Content Categories
-
-### Developer Guides
-- REST API documentation (Pet Store API, Zeta Card Ordering)
-- GraphQL API guides (Content Filter, Archive, Media Moderation)
-- Technical implementation examples
-
-### User Guides  
-- Software feature guides (Zeta Add Money)
-- Configuration tutorials (SharePoint Online, Control Panel)
-- Step-by-step user instructions
-
-### Knowledge Base
-- Platform overviews (Zeta Fusion)
-- Technical concept explanations
-- Comprehensive system documentation
-
-## 🤝 Contributing
-
-While this is a personal portfolio, suggestions and feedback are welcome! Please feel free to:
-
-- Open an issue for suggestions or bug reports
-- Submit a pull request for improvements
-- Contact via [LinkedIn](https://www.linkedin.com/in/muhamed-javid/) or [email](mailto:javidwriter@gmail.com)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## � Contact
-
-**Muhamed Javid Hussain**
-- Email: [javidwriter@gmail.com](mailto:javidwriter@gmail.com)
+For questions about this portfolio or technical writing services:
+- Email: javidwriter@gmail.com
 - LinkedIn: [muhamed-javid](https://www.linkedin.com/in/muhamed-javid/)
-- GitHub: [Javeed-Writer](https://github.com/Javeed-Writer)
-
----
-
-*This portfolio demonstrates expertise in technical writing, documentation strategy, and modern web development practices.*
+- GitHub: [ashfaqfarook](https://github.com/ashfaqfarook)
 

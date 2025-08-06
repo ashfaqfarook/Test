@@ -21,76 +21,15 @@
 <body>
     <header class="site-header">
         <div class="wrapper">
-            <nav class="site-nav">
-                <div class="nav-brand">
-                    <a class="site-title" href="{{ '/' | relative_url }}">
-                        {{ site.author.name }}
-                    </a>
-                    <p class="site-tagline">{{ site.tagline }}</p>
-                </div>
-                
-                <div class="nav-menu">
-                    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-                    <label for="nav-trigger" class="nav-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    
-                    <div class="nav-wrapper">
-                        {% for item in site.navigation %}
-                            {% if item.dropdown %}
-                                <div class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle">
-                                        {{ item.title }}
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        {% for subitem in item.items %}
-                                            <a href="{{ subitem.url | relative_url }}" class="dropdown-link">
-                                                {{ subitem.title }}
-                                            </a>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            {% else %}
-                                <a href="{{ item.url | relative_url }}" class="nav-link">
-                                    {{ item.title }}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-            </nav>
+            {% include navigation.html %}
         </div>
     </header>
 
     <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
+        {{ content }}
     </main>
 
-    <footer class="site-footer">
-        <div class="wrapper">
-            <div class="footer-content">
-                <div class="footer-social">
-                    <a href="{{ site.author.linkedin }}" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="{{ site.author.github }}" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:{{ site.author.email }}" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <p class="footer-text">
-                    © {{ 'now' | date: '%Y' }} {{ site.author.name }}. Technical Writer Portfolio.
-                </p>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="{{ '/assets/main.js' | relative_url }}"></script>
 </body>

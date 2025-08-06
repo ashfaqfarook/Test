@@ -182,10 +182,10 @@ permalink: /resume/
             I'd love to hear about your documentation needs.
         </p>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="/contact/" class="btn btn-primary">
+            <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-envelope"></i> Get in Touch
             </a>
-            <a href="/" class="btn btn-outline">
+            <a href="{{ '/' | relative_url }}" class="btn btn-outline">
                 <i class="fas fa-folder-open"></i> View Portfolio
             </a>
         </div>

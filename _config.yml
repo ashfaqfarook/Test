@@ -2,15 +2,15 @@
 title: "Javid Hussain"
 tagline: "Technical Writer"
 description: "Technical Writer specializing in user and API documentation, creating clear documentation that helps users achieve their goals."
-baseurl: ""
-url: "https://javeed-writer.github.io/Tech-writing-portfolio"
+baseurl: "/Test"
+url: "https://ashfaqfarook.github.io"
 
 # Author information
 author:
   name: "Muhamed Javid Hussain"
   email: "javidwriter@gmail.com"
   linkedin: "https://www.linkedin.com/in/muhamed-javid/"
-  github: "https://github.com/Javeed-Writer"
+  github: "https://github.com/ashfaqfarook"
 
 # Build settings
 markdown: kramdown
@@ -29,7 +29,7 @@ collections:
     output: true
     permalink: /:collection/:name/
 
-# Plugin settings
+# GitHub Pages settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap

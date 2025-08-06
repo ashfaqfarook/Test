@@ -33,7 +33,7 @@ permalink: /developer-guides/
                 <span style="background: #e8f6f3; color: #27ae60; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Swagger</span>
                 <span style="background: #fef9e7; color: #f39c12; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Endpoints</span>
             </div>
-            <a href="{{ '/developer_guides/rest_api_pet_store.md' | relative_url }}" class="btn btn-primary">
+            <a href="{{ '/developer_guides/rest_api_pet_store/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-eye"></i> View Guide
             </a>
         </div>
@@ -52,7 +52,7 @@ permalink: /developer-guides/
                 <span style="background: #f4e8fd; color: #8e44ad; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Zeta Platform</span>
                 <span style="background: #e8f6f3; color: #27ae60; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Financial Services</span>
             </div>
-            <a href="{{ '/developer_guides/rest_api_ordering_a_new_card_zeta.md' | relative_url }}" class="btn btn-primary">
+            <a href="{{ '/developer_guides/rest_api_ordering_a_new_card_zeta/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-eye"></i> View Guide
             </a>
         </div>
@@ -71,7 +71,7 @@ permalink: /developer-guides/
                 <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Content Filter</span>
                 <span style="background: #fadbd8; color: #c0392b; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Moderation</span>
             </div>
-            <a href="{{ '/developer_guides/graphql_api_content_filter.md' | relative_url }}" class="btn btn-primary">
+            <a href="{{ '/developer_guides/graphql_api_content_filter/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-eye"></i> View Guide
             </a>
         </div>
@@ -90,7 +90,7 @@ permalink: /developer-guides/
                 <span style="background: #eaecee; color: #34495e; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Archive</span>
                 <span style="background: #e8f6f3; color: #27ae60; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Data Management</span>
             </div>
-            <a href="{{ '/developer_guides/graphql_api_content_archive.md' | relative_url }}" class="btn btn-primary">
+            <a href="{{ '/developer_guides/graphql_api_content_archive/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-eye"></i> View Guide
             </a>
         </div>
@@ -109,7 +109,7 @@ permalink: /developer-guides/
                 <span style="background: #e8f8f5; color: #16a085; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Media</span>
                 <span style="background: #fadbd8; color: #c0392b; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Security</span>
             </div>
-            <a href="{{ '/developer_guides/graphql_api_bypass_media_moderation.md' | relative_url }}" class="btn btn-primary">
+            <a href="{{ '/developer_guides/graphql_api_bypass_media_moderation/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-eye"></i> View Guide
             </a>
         </div>
@@ -140,7 +140,7 @@ permalink: /developer-guides/
         Looking for API documentation, technical guides, or developer resources tailored to your specific needs? 
         I specialize in creating clear, comprehensive documentation that helps developers succeed.
     </p>
-    <a href="/contact/" class="btn btn-primary">
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
         <i class="fas fa-envelope"></i> Get in Touch
     </a>
 </div>

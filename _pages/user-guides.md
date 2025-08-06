@@ -38,7 +38,7 @@ permalink: /user-guides/
                 <li>Transaction processing workflow</li>
             </ul>
         </div>
-        <a href="{{ '/user-guides/zeta_add_money_guide.md' | relative_url }}" class="btn btn-primary">
+        <a href="{{ '/user_guides/zeta_add_money_guide/' | relative_url }}" class="btn btn-primary">
             <i class="fas fa-eye"></i> View Guide
         </a>
     </div>
@@ -65,7 +65,7 @@ permalink: /user-guides/
                 <li>User permissions and access control</li>
             </ul>
         </div>
-        <a href="{{ '/user-guides/using_sharepoint_online.md' | relative_url }}" class="btn btn-primary">
+        <a href="{{ '/user_guides/using_sharepoint_online/' | relative_url }}" class="btn btn-primary">
             <i class="fas fa-eye"></i> View Guide
         </a>
     </div>
@@ -92,7 +92,7 @@ permalink: /user-guides/
                 <li>System performance optimization</li>
             </ul>
         </div>
-        <a href="{{ '/user-guides/Configuring-the-Control-Panel-Settings.md' | relative_url }}" class="btn btn-primary">
+        <a href="{{ '/user_guides/Configuring-the-Control-Panel-Settings/' | relative_url }}" class="btn btn-primary">
             <i class="fas fa-eye"></i> View Guide
         </a>
     </div>
@@ -135,7 +135,7 @@ permalink: /user-guides/
         Whether you need user guides, tutorials, or help documentation, I can help you create resources 
         that truly serve your users' needs and improve their experience with your product.
     </p>
-    <a href="/contact/" class="btn btn-primary">
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
         <i class="fas fa-envelope"></i> Let's Discuss Your Project
     </a>
 </div>
