@@ -245,10 +245,20 @@ body {
     overflow-y: auto;
     position: sticky;
     top: 81px;
+  min-width: 300px; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+  overflow-y: auto;
 }
 
 .sidebar-content {
     padding: var(--spacing-xl);
+    flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Profile Section */
@@ -425,6 +435,8 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 .contact-cta::before {
@@ -481,6 +493,10 @@ body {
 .main-content {
     background: var(--surface-color);
     min-height: calc(100vh - 81px);
+    flex: 1;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 2rem;
 }
 
 .content-wrapper {
