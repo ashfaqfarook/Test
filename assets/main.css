@@ -422,12 +422,12 @@ body {
 .guide-content {
     font-size: 1.1rem;
     line-height: 1.8;
-    padding: 1rem 0;
+    padding: 2rem;
 }
 
 /* Page content styling */
 .page-content {
-    padding: 1rem 0;
+    padding: 2rem;
     margin: 0 2rem;
 }
 
