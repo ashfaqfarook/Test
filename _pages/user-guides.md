@@ -16,86 +16,27 @@ permalink: /user-guides/
 </div>
 
 <div class="portfolio-grid">
-    <div class="portfolio-card">
-        <div class="card-icon" style="color: #8e44ad;">
-            <i class="fas fa-wallet"></i>
+    {% for guide in site.user_guides %}
+        <div class="portfolio-card">
+            <div class="card-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3 class="card-title">{{ guide.title }}</h3>
+            <p class="card-description">
+                {{ guide.description | default: "User guide and step-by-step documentation." }}
+            </p>
+            {% if guide.tags %}
+                <div style="margin: 1rem 0;">
+                    {% for tag in guide.tags %}
+                        <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <a href="{{ guide.url | relative_url }}" class="btn btn-primary">
+                <i class="fas fa-eye"></i> View Guide
+            </a>
         </div>
-        <h3 class="card-title">Zeta Add Money Feature</h3>
-        <p class="card-description">
-            Comprehensive user guide for adding money to Zeta cash cards using multiple payment methods, 
-            including debit cards and net banking options with detailed step-by-step instructions.
-        </p>
-        <div style="margin: 1rem 0;">
-            <span style="background: #f4e8fd; color: #8e44ad; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Mobile App</span>
-            <span style="background: #e8f6f3; color: #27ae60; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Financial Services</span>
-            <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Payment Methods</span>
-        </div>
-        <div style="margin-bottom: 1.5rem;">
-            <strong style="color: #2c3e50;">Features Covered:</strong>
-            <ul style="margin-top: 0.5rem; text-align: left; color: #666;">
-                <li>Debit card payment integration</li>
-                <li>Net banking setup and usage</li>
-                <li>Transaction processing workflow</li>
-            </ul>
-        </div>
-        <a href="{{ '/user_guides/zeta_add_money_guide/' | relative_url }}" class="btn btn-primary">
-            <i class="fas fa-eye"></i> View Guide
-        </a>
-    </div>
-    
-    <div class="portfolio-card">
-        <div class="card-icon" style="color: #e67e22;">
-            <i class="fab fa-microsoft"></i>
-        </div>
-        <h3 class="card-title">SharePoint Online Configuration</h3>
-        <p class="card-description">
-            Complete guide for configuring and using SharePoint Online, covering setup procedures, 
-            user management, document collaboration, and best practices for team productivity.
-        </p>
-        <div style="margin: 1rem 0;">
-            <span style="background: #fef2e8; color: #e67e22; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">SharePoint</span>
-            <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Microsoft 365</span>
-            <span style="background: #e8f6f3; color: #27ae60; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Collaboration</span>
-        </div>
-        <div style="margin-bottom: 1.5rem;">
-            <strong style="color: #2c3e50;">Topics Covered:</strong>
-            <ul style="margin-top: 0.5rem; text-align: left; color: #666;">
-                <li>Initial setup and configuration</li>
-                <li>Document management workflows</li>
-                <li>User permissions and access control</li>
-            </ul>
-        </div>
-        <a href="{{ '/user_guides/using_sharepoint_online/' | relative_url }}" class="btn btn-primary">
-            <i class="fas fa-eye"></i> View Guide
-        </a>
-    </div>
-    
-    <div class="portfolio-card">
-        <div class="card-icon" style="color: #34495e;">
-            <i class="fas fa-cogs"></i>
-        </div>
-        <h3 class="card-title">Control Panel Settings Configuration</h3>
-        <p class="card-description">
-            Detailed instructions for configuring control panel settings across various systems, 
-            including security settings, user preferences, and system optimization configurations.
-        </p>
-        <div style="margin: 1rem 0;">
-            <span style="background: #eaecee; color: #34495e; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">System Config</span>
-            <span style="background: #fadbd8; color: #c0392b; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem;">Security</span>
-            <span style="background: #e8f4fd; color: #2980b9; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem;">Administration</span>
-        </div>
-        <div style="margin-bottom: 1.5rem;">
-            <strong style="color: #2c3e50;">Key Areas:</strong>
-            <ul style="margin-top: 0.5rem; text-align: left; color: #666;">
-                <li>Security and privacy settings</li>
-                <li>User account management</li>
-                <li>System performance optimization</li>
-            </ul>
-        </div>
-        <a href="{{ '/user_guides/Configuring-the-Control-Panel-Settings/' | relative_url }}" class="btn btn-primary">
-            <i class="fas fa-eye"></i> View Guide
-        </a>
-    </div>
+    {% endfor %}
 </div>
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">

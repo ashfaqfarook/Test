@@ -62,9 +62,9 @@ title: "About Me"
                     GraphQL documentation, and integration tutorials.
                 </p>
                 <ul class="card-items">
-                    <li><a href="{{ '/developer_guides/rest_api_pet_store/' | relative_url }}">Pet Store API Guide</a></li>
-                    <li><a href="{{ '/developer_guides/rest_api_ordering_a_new_card_zeta/' | relative_url }}">Zeta Card Ordering API</a></li>
-                    <li><a href="{{ '/developer_guides/graphql_api_content_filter/' | relative_url }}">GraphQL Content Filter</a></li>
+                    {% for guide in site.developer_guides limit:3 %}
+                        <li><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></li>
+                    {% endfor %}
                 </ul>
                 <a href="{{ '/developer-guides/' | relative_url }}" class="btn btn-primary">View All Developer Guides</a>
             </div>
@@ -79,9 +79,9 @@ title: "About Me"
                     and accomplish their goals with ease.
                 </p>
                 <ul class="card-items">
-                    <li><a href="{{ '/user_guides/zeta_add_money_guide/' | relative_url }}">Zeta Add Money Feature</a></li>
-                    <li><a href="{{ '/user_guides/using_sharepoint_online/' | relative_url }}">SharePoint Online Guide</a></li>
-                    <li><a href="{{ '/user_guides/Configuring-the-Control-Panel-Settings/' | relative_url }}">Control Panel Configuration</a></li>
+                    {% for guide in site.user_guides limit:3 %}
+                        <li><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></li>
+                    {% endfor %}
                 </ul>
                 <a href="{{ '/user-guides/' | relative_url }}" class="btn btn-primary">View All User Guides</a>
             </div>
@@ -96,7 +96,9 @@ title: "About Me"
                     and detailed system explanations.
                 </p>
                 <ul class="card-items">
-                    <li><a href="{{ '/knowledge_base/zeta_fusion/' | relative_url }}">Zeta Fusion Platform Overview</a></li>
+                    {% for article in site.knowledge_base limit:3 %}
+                        <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
+                    {% endfor %}
                 </ul>
                 <a href="{{ '/knowledge-base/' | relative_url }}" class="btn btn-primary">View Knowledge Base</a>
             </div>
