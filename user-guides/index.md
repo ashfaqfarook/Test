@@ -1,10 +1,7 @@
 ---
 layout: default
 title: User Guides
-description: User-friendly guides that help end users navigate software features effectively.
 ---
-
-# 📖 User Guides
 
 Welcome to my collection of user-focused documentation. These guides are designed to help end users navigate software features, complete tasks efficiently, and troubleshoot common issues with clear, step-by-step instructions.
 
@@ -65,14 +62,6 @@ All guides are validated through:
 - **Support ticket analysis** - Common pain points addressed
 - **Performance metrics** - Reduced support requests
 - **Accessibility review** - Inclusive design practices
-
-## 🚀 Impact Metrics
-
-My user guides consistently deliver:
-- **30-50% reduction** in support tickets
-- **Improved user onboarding** experience
-- **Higher feature adoption** rates
-- **Enhanced user satisfaction** scores
 
 ---
 
