@@ -13,7 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Navigation structure with icons
+# Navigation structure with icons - Updated with Portfolio master menu
 navigation:
   - name: "Home"
     link: "/"
@@ -21,15 +21,18 @@ navigation:
   - name: "About"
     link: "/about/"
     icon: "fas fa-user"
-  - name: "Developer Guides"
-    link: "/developer_guides/"
-    icon: "fas fa-code"
-  - name: "User Guides" 
-    link: "/user-guides/"
-    icon: "fas fa-book"
-  - name: "Knowledge Base"
-    link: "/knowledge_base/"
-    icon: "fas fa-database"
+  - name: "Portfolio"
+    icon: "fas fa-briefcase"
+    submenu:
+      - name: "Developer Guides"
+        link: "/developer_guides/"
+        icon: "fas fa-code"
+      - name: "User Guides" 
+        link: "/user-guides/"
+        icon: "fas fa-book"
+      - name: "Knowledge Base"
+        link: "/knowledge_base/"
+        icon: "fas fa-database"
   - name: "Contact"
     link: "/contact/"
     icon: "fas fa-envelope"
@@ -63,37 +66,6 @@ sidebar_categories:
     - name: "Control Panel Settings"
       link: "/user-guides/Configuring-the-Control-Panel-Settings/"
       description: "Administrative configuration guide"
-
-# Skills configuration
-skills:
-  documentation_types:
-    - "API Documentation"
-    - "User Guides"
-    - "Developer Docs"
-    - "Release Notes"
-    - "Knowledge Base"
-  
-  technical_skills:
-    - "REST APIs"
-    - "GraphQL"
-    - "OpenAPI"
-    - "Markdown"
-    - "Git"
-    - "Jekyll"
-  
-  tools_platforms:
-    - "GitBook"
-    - "Confluence"
-    - "Notion"
-    - "Figma"
-    - "Postman"
-    - "VS Code"
-  
-  industries:
-    - "FinTech"
-    - "SaaS"
-    - "Enterprise"
-    - "Developer Tools"
 
 # Exclude from processing
 exclude:
