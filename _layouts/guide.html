@@ -3,21 +3,6 @@ layout: default
 ---
 
 <article class="guide">
-    <header class="guide-header">
-        <h1 class="guide-title">{{ page.title }}</h1>
-        {% if page.description %}
-            <p class="guide-description">{{ page.description }}</p>
-        {% endif %}
-        <div class="guide-meta">
-            {% if page.author %}
-                <span class="guide-author">By {{ page.author }}</span>
-            {% endif %}
-            {% if page.date %}
-                <span class="guide-date">{{ page.date | date: "%B %d, %Y" }}</span>
-            {% endif %}
-        </div>
-    </header>
-    
     <div class="guide-content">
         {{ content }}
     </div>
