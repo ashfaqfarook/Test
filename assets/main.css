@@ -140,31 +140,6 @@ body {
     color: #3498db;
 }
 
-/* Hero Section */
-.hero {
-    background: #ffffff;
-    padding: 0;
-    text-align: center;
-    overflow: hidden;
-    max-height: 40vh;
-}
-
-.hero-image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-}
-
-.hero-image {
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
 /* Table Design */
 table {
   border-collapse: collapse;
@@ -627,14 +602,6 @@ table, th, td {
         font-size: 2rem !important;
         width: 50px !important;
         height: 50px !important;
-    }
-    
-    .hero {
-        max-height: 30vh;
-    }
-    
-    .hero-image-container {
-        height: 30vh;
     }
     
     .footer-content {
