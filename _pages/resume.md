@@ -9,10 +9,6 @@ permalink: /resume/
         <i class="fas fa-file-alt" style="color: #3498db; margin-right: 0.5rem;"></i>
         Resume
     </h1>
-    <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">
-        Senior Technical Writer with 9+ years of experience creating user-focused documentation, 
-        API guides, and comprehensive technical content.
-    </p>
 </div>
 
 <div style="max-width: 800px; margin: 0 auto;">
@@ -20,10 +16,10 @@ permalink: /resume/
     <section style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); margin-bottom: 2rem;">
         <h2 style="color: #2c3e50; margin-bottom: 1.5rem; font-size: 1.8rem; border-bottom: 2px solid #3498db; padding-bottom: 0.5rem;">
             <i class="fas fa-user" style="color: #3498db; margin-right: 0.5rem;"></i>
-            Professional Summary
+            Summary
         </h2>
         <p style="font-size: 1.1rem; line-height: 1.7; color: #555; margin-bottom: 1rem;">
-            Experienced Content Designer and Technical Writer with a proven track record of creating clear, comprehensive documentation 
+            A Senior Technical Writer with a proven track record of creating clear, comprehensive documentation 
             that bridges the gap between complex technical concepts and user understanding. Specialized in API documentation, 
             user guides, and technical content strategy with a focus on improving user experience and developer adoption.
         </p>
@@ -56,6 +52,7 @@ permalink: /resume/
                 <ul style="color: #666; line-height: 1.6;">
                     <li>REST API Documentation</li>
                     <li>GraphQL Documentation</li>
+                    <li>DITA Information Framework</li>
                     <li>Software Testing</li>
                     <li>Functional Validation</li>
                     <li>Content Strategy</li>
@@ -64,11 +61,12 @@ permalink: /resume/
             <div>
                 <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Tools & Technologies</h4>
                 <ul style="color: #666; line-height: 1.6;">
-                    <li>Markdown & Git</li>
-                    <li>Documentation Platforms</li>
-                    <li>API Testing Tools</li>
-                    <li>Content Management</li>
-                    <li>Web Technologies</li>
+                    <li>Markdown & GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>Jira & Confluence</li>
+                    <li>Readme.io & Postman</li>
+                    <li>Oxygen XML Editor</li>
+                    <li>Cloud-based Documentation Tools</li>
                 </ul>
             </div>
         </div>
