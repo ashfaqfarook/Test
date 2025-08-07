@@ -7,13 +7,22 @@ date: 2024-06-12
 tags: ["User Guide", "SharePoint", "Microsoft 365", "Collaboration"]
 category: "user_guides"
 ---
+# Configuring and Using SharePoint Online
 
-# Table of Contents
+## Table of Contents
+- [Configuring and Using SharePoint Online](#configuring-and-using-sharepoint-online)
+  - [Table of Contents](#table-of-contents)
 - [SharePoint Online](#sharepoint-online)
 - [Types of SharePoint Site](#types-of-sharepoint-site)
 - [Signing to SharePoint Online](#signing-to-sharepoint-online)
+  - [Pre-requisites](#pre-requisites)
+  - [Procedure](#procedure)
 - [Team Site](#team-site)
-- [Communication-site](#communication-site)
+  - [Creating a Team Site](#creating-a-team-site)
+    - [Pre-requisites](#pre-requisites-1)
+    - [Procedure](#procedure-1)
+- [Communication Site](#communication-site)
+  - [Creating a Communication Site](#creating-a-communication-site)
 - [Creating a Page in SharePoint Online](#creating-a-page-in-sharepoint-online)
 - [Creating a Document Library Application in the SharePoint Online](#creating-a-document-library-application-in-the-sharepoint-online)
 

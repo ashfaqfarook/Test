@@ -8,15 +8,16 @@ tags: ["User Guide", "Zeta", "Mobile App", "Financial Services"]
 category: "user_guides"
 ---
 # Adding Money Feature
-*for Zeta For Employees users*
 
-*by Muhamed Javid Hussain*
+This guide provides step-by-step instructions for adding money to your Zeta for Employees cash card using either debit card or net banking methods.
 
 ## Table of Contents
 
-1. [Add Money in Zeta Application](#add-money-in-zeta-application)
-2. [Add Money with the Debit Card](#add-money-with-the-debit-card)
-3. [Add Money with Net Banking](#add-money-with-net-banking)
+- [Adding Money Feature](#adding-money-feature)
+  - [Table of Contents](#table-of-contents)
+  - [Add Money in Zeta Application](#add-money-in-zeta-application)
+  - [Add Money with the Debit Card](#add-money-with-the-debit-card)
+  - [Add Money with Net Banking](#add-money-with-net-banking)
 
 ---
 
@@ -30,8 +31,11 @@ Make sure that you have installed and configured the **Zeta for Employees** mobi
 
 The following two methods instruct you to add money to your cash card in **Zeta for Employees** mobile application:
 
-1. [Add Money with the Debit Card](#add-money-with-the-debit-card)
-2. [Add Money with Net Banking](#add-money-with-net-banking)
+- [Adding Money Feature](#adding-money-feature)
+  - [Table of Contents](#table-of-contents)
+  - [Add Money in Zeta Application](#add-money-in-zeta-application)
+  - [Add Money with the Debit Card](#add-money-with-the-debit-card)
+  - [Add Money with Net Banking](#add-money-with-net-banking)
 
 ## Add Money with the Debit Card
 
@@ -68,5 +72,3 @@ The following two methods instruct you to add money to your cash card in **Zeta 
 **Result**: The amount is successfully added to your cash card with a net banking option.
 
 ---
-
-*This guide provides step-by-step instructions for adding money to your Zeta for Employees cash card using either debit card or net banking methods.*

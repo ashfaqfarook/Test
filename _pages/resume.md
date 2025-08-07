@@ -175,8 +175,8 @@ permalink: /resume/
             <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">
                 <i class="fas fa-envelope"></i> Get in Touch
             </a>
-            <a href="{{ '/' | relative_url }}" class="btn btn-outline">
-                <i class="fas fa-folder-open"></i> View Portfolio
+            <a href="{{ '/developer-guides/' | relative_url }}" class="btn btn-outline">
+                    <i class="fas fa-folder-open"></i> View Portfolio
             </a>
         </div>
     </section>
