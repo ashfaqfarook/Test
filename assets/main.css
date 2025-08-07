@@ -146,6 +146,7 @@ body {
     padding: 0;
     text-align: center;
     overflow: hidden;
+    max-height: 40vh;
 }
 
 .hero-image-container {
@@ -153,12 +154,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 40vh;
 }
 
 .hero-image {
     width: 100%;
     max-width: 1200px;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
@@ -496,13 +498,15 @@ table, th, td {
 }
 
 .footer-content {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer-social {
-    margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
     gap: 1rem;
 }
 
@@ -583,6 +587,12 @@ table, th, td {
         background: #f8f9fa;
     }
     
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -619,9 +629,18 @@ table, th, td {
         height: 50px !important;
     }
     
-    .hero-image {
-        width: 100%;
-        height: auto;
+    .hero {
+        max-height: 30vh;
+    }
+    
+    .hero-image-container {
+        height: 30vh;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
     
     .footer-social {
