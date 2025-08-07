@@ -19,7 +19,6 @@ category: "user_guides"
     - [Change of your Homepage in Web Browser](#change-of-your-homepage-in-web-browser)
   - [Hardware and Sound](#hardware-and-sound)
     - [Add a Device in your computer](#add-a-device-in-your-computer)
-  - [Programs](#programs)
 
 ## About
 The control panel is used to adjust your computer settings such as setting the  security . The control panel has the following sections:  
@@ -51,9 +50,9 @@ You can change your homepage address in your default web browser with the use of
 
 1. Go to **Control Panel** > **Network and Internet** > **Internet Options** 
 The **Internet Properties** window opens.
-2.On the **Home page** section of the **General** tab on the **Internet Properties** window, enter your  web address which you want it as your homepage and select **OK** 
-
-For example, enter the web address: Google 
+2. On the **Home page** section of the **General** tab on the **Internet Properties** window, enter your  web address which you want it as your homepage.
+For example, Google.
+1. Select **OK**. 
 
 ## Hardware and Sound 
 
@@ -67,11 +66,5 @@ You can add hardware devices such as Light Pen, Scanner in your computer through
 
 1. Go to **Control Panel** > **Network and Internet** > **Hardware and Sound** > **Devices and Printers**
 2. On the header section of the **Devices and Printers** window, select **Add a Device**. The **Add a Device** window opens and a list of available devices appears
-3. Select a device which you want to add to your computer and Click **Next** and then click **OK** A device has been added to your computer. 
-
-## Programs 
-
-Programs option assist you to configure programs and features for your  computer. 
-
-In this section, you can uninstall a program, view the installed updates, change the default program.
+3. Select a device which you want to add to your computer and Click **Next** and then click **OK** A device has been added to your computer.
 
